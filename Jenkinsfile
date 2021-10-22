@@ -34,6 +34,7 @@ pipeline {
     }
 
     stage('Deploy Production') {
+      agent any
       steps {
         echo 'Run Deploy to Production'
       }
